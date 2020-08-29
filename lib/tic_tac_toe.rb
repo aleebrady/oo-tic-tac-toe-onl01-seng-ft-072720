@@ -66,12 +66,14 @@ class TicTacToe
       WIN_COMBINATIONS.detect do |w|
         if @board[w[0]] == @board[w[1]] && @board[w[1]] == @board[w[2]] && position_taken?(w[0])
           w
+        end
+      end
     end
-  end
-end
+    
+    def full?
+      @board.all {|i| i == "X" || i =="O"
+    end
 
-
-      
 
 end
 
