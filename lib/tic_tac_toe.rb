@@ -93,7 +93,14 @@ class TicTacToe
       turn
       break if draw
     end
+    
+    if won?
+      puts "Congrats #{winner}!"
+    else
+      draw?
+      puts "Cat's Game!"
     end
+  end
 
 
 end
