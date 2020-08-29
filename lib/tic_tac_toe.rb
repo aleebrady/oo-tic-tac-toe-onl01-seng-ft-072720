@@ -93,6 +93,7 @@ class TicTacToe
       turn
       break if draw
     end
+    end
 
 
 end
